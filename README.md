@@ -9,7 +9,7 @@ Spotify is a Songs App.
 ✅ The app is fully responsive and it adapts to any screen size.  
 ✅ The app was developed while considering the Web Content Accessibility Guidelines (WCAG).  
 <br/>
-:link: Link to the live project: [Link](https://shonchassel.github.io/Appsus/#/)  
+:link: Link to the live project: [Link](https://spotify-il.vercel.app)  
 <br/>
 <img src='https://res.cloudinary.com/dirvusyaz/image/upload/v1678454478/spot_vzh9tm.png'/>
 <br/>
