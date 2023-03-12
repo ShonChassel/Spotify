@@ -18,7 +18,7 @@ export default function signin({ providers },) {
   }, [session]);
   
 
-  if (session) return <Loader />;
+  // if (session) return <Loader />;
 
   return (
     <div className="bg-black h-screen flex flex-col items-center pt-40 space-y-8">
