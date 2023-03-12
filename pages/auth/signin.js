@@ -11,9 +11,8 @@ export default function signin({ providers },) {
   console.log('not in', session)
   
   useEffect(() => {
-    console.log('in useEffect', session)
+    console.log('session:', session)
     if (session) {
-      console.log(session)
       router.push("/");
     }
   }, [session]);
