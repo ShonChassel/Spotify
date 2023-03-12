@@ -85,10 +85,10 @@ export default NextAuth({
       session.user = token.user;
       session.accessToken = token.accessToken;
       session.error = token.error;
-      
-      console.log('session', session)
+
       return session;
     },
-
   },
 });
+
+
