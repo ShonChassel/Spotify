@@ -50,6 +50,7 @@ export default NextAuth({
   // Configure one or more authentication providers
   providers: [
     SpotifyProvider({
+      secret: process.env.NEXTAUTH_SECRET,
       clientId: process.env.SPOTIFY_CLIENT_ID,
       clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
       authorization:
@@ -57,7 +58,6 @@ export default NextAuth({
     }),
     // ...add more providers here
   ],
-  secret: process.env.NEXTAUTH_SECRET,
   pages: {
     signIn: "/auth/signin",
   },
