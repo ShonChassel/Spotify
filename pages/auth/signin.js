@@ -2,22 +2,19 @@ import { getProviders, signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Image from "next/image";
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Loader from "../../components/Loader";
 
-export default function signin({ providers },) {
-  const router = useRouter();
-  const { data: session } = useSession()
-  console.log('not in', session)
-  
+ function Signin({ providers },) {
+   const { data: session } = useSession()
+   const router = useRouter();
+
   useEffect(() => {
-    console.log('in useEffect', session)
     if (session) {
-      console.log(session)
       router.push("/");
     }
   }, [session]);
-  
+
 
   if (session) return <Loader />;
 
@@ -50,7 +47,7 @@ export default function signin({ providers },) {
   );
 }
 
-// export default Signin;
+export default Signin;
 
 export async function getServerSideProps() {
   const providers = await getProviders();
